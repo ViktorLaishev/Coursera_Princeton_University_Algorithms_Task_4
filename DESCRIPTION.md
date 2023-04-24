@@ -157,3 +157,5 @@ Two optimizations. To speed up your solver, implement the following two optimiza
 To detect such situations, use the fact that boards are divided into two equivalence classes with respect to reachability:
   -Those that can lead to the goal board
   -Those that can lead to the goal board if we modify the initial board by swapping any pair of tiles (the blank square is not a tile).
+(Difficult challenge for the mathematically inclined: prove this fact.) To apply the fact, run the A* algorithm on two puzzle instances—one with the initial board and one with the initial board modified by swapping a pair of tiles—in lockstep (alternating back and forth between exploring search nodes in each of the two game trees). Exactly one of the two will lead to the goal board.
+Web submission. Submit a .zip file containing only Board.java and Solver.java (with the Manhattan priority). We will supply algs4.jar. You may not call any library functions other those in java.lang, java.util, and algs4.jar. You must use MinPQ for the priority queue(s).

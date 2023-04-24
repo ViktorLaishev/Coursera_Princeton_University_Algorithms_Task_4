@@ -153,5 +153,4 @@ Two optimizations. To speed up your solver, implement the following two optimiza
 
   -The critical optimization. A* search has one annoying feature: search nodes corresponding to the same board are enqueued on the priority queue many times (e.g., the bottom-left search node in the game-tree diagram above). To reduce unnecessary exploration of useless search nodes, when considering the neighbors of a search node, don’t enqueue a neighbor if its board is the same as the board of the previous search node in the game tree.
   -Caching the Hamming and Manhattan priorities. To avoid recomputing the Manhattan priority of a search node from scratch each time during various priority queue operations, pre-compute its value when you construct the search node; save it in an instance variable; and return the saved value as needed. This caching technique is broadly applicable: consider using it in any situation where you are recomputing the same quantity many times and for which computing that quantity is a bottleneck operation.
-  Detecting unsolvable boards. Not all initial boards can lead to the goal board by a sequence of moves, including these two:
-  
+  Detecting unsolvable boards. 

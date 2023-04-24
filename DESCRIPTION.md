@@ -82,3 +82,28 @@ Corner cases.
   -Throw an IllegalArgumentException in the constructor if the argument is null.
   -Return -1 in moves() if the board is unsolvable.
   -Return null in solution() if the board is unsolvable.
+Test client. The following test client takes the name of an input file as a command-line argument and prints the minimum number of moves to solve the puzzle and a corresponding solution.
+
+public static void main(String[] args) {
+
+    // create initial board from file
+    In in = new In(args[0]);
+    int n = in.readInt();
+    int[][] tiles = new int[n][n];
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            tiles[i][j] = in.readInt();
+    Board initial = new Board(tiles);
+
+    // solve the puzzle
+    Solver solver = new Solver(initial);
+
+    // print solution to standard output
+    if (!solver.isSolvable())
+        StdOut.println("No solution possible");
+    else {
+        StdOut.println("Minimum number of moves = " + solver.moves());
+        for (Board board : solver.solution())
+            StdOut.println(board);
+    }
+}

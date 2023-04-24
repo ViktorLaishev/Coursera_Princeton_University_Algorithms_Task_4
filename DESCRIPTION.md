@@ -107,3 +107,45 @@ public static void main(String[] args) {
             StdOut.println(board);
     }
 }
+The input file contains the board size n, followed by the n-by-n grid of tiles, using 0 to designate the blank square.
+~/Desktop/8puzzle> cat puzzle04.txt
+3
+ 0  1  3
+ 4  2  5
+ 7  8  6
+
+~/Desktop/8puzzle> java-algs4 Solver puzzle04.txt
+Minimum number of moves = 4
+
+3
+ 0  1  3 
+ 4  2  5 
+ 7  8  6 
+
+3
+ 1  0  3 
+ 4  2  5 
+ 7  8  6 
+
+3
+ 1  2  3 
+ 4  0  5 
+ 7  8  6 
+
+3
+ 1  2  3 
+ 4  5  0   
+ 7  8  6 
+
+3
+ 1  2  3 
+ 4  5  6 
+ 7  8  0
+~/Desktop/8puzzle> cat puzzle3x3-unsolvable.txt
+3
+ 1  2  3
+ 4  5  6
+ 8  7  0
+
+~/Desktop/8puzzle> java-algs4 Solver puzzle3x3-unsolvable.txt
+Unsolvable puzzle

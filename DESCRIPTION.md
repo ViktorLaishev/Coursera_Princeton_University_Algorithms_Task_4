@@ -155,3 +155,5 @@ Two optimizations. To speed up your solver, implement the following two optimiza
   -Caching the Hamming and Manhattan priorities. To avoid recomputing the Manhattan priority of a search node from scratch each time during various priority queue operations, pre-compute its value when you construct the search node; save it in an instance variable; and return the saved value as needed. This caching technique is broadly applicable: consider using it in any situation where you are recomputing the same quantity many times and for which computing that quantity is a bottleneck operation.
   Detecting unsolvable boards. 
 To detect such situations, use the fact that boards are divided into two equivalence classes with respect to reachability:
+  -Those that can lead to the goal board
+  -Those that can lead to the goal board if we modify the initial board by swapping any pair of tiles (the blank square is not a tile).

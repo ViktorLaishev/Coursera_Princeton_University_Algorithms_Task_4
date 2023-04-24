@@ -36,4 +36,4 @@ public class Board {
     public static void main(String[] args)
 
 }
-Constructor.  You may assume that the constructor receives an n-by-n array containing the n2 integers between 0 and n2 − 1, where 0 represents the blank square. You may also assume that 2 ≤ n < 128.
+Constructor.  You may assume that the constructor receives an n-by-n array containing the n^2 integers between 0 and n^2 − 1, where 0 represents the blank square. You may also assume that 2 ≤ n < 128.

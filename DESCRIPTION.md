@@ -79,6 +79,6 @@ Implementation requirement.  To implement the A* algorithm, you must use the Min
 
 Corner cases. 
 
-Throw an IllegalArgumentException in the constructor if the argument is null.
-Return -1 in moves() if the board is unsolvable.
-Return null in solution() if the board is unsolvable.
+  -Throw an IllegalArgumentException in the constructor if the argument is null.
+  -Return -1 in moves() if the board is unsolvable.
+  -Return null in solution() if the board is unsolvable.

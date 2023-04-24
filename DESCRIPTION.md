@@ -43,3 +43,6 @@ Hamming and Manhattan distances.  To measure how close a board is to the goal bo
 Comparing two boards for equality.  Two boards are equal if they are have the same size and their corresponding tiles are in the same positions. The equals() method is inherited from java.lang.Object, so it must obey all of Java’s requirements.
 
 Neighboring boards.  The neighbors() method returns an iterable containing the neighbors of the board. Depending on the location of the blank square, a board can have 2, 3, or 4 neighbors.
+Unit testing.  Your main() method should call each public method directly and help verify that they works as prescribed (e.g., by printing results to standard output).
+
+Performance requirements.  Your implementation should support all Board methods in time proportional to n2 (or better) in the worst case.

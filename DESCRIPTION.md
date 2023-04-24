@@ -149,3 +149,6 @@ Minimum number of moves = 4
 
 ~/Desktop/8puzzle> java-algs4 Solver puzzle3x3-unsolvable.txt
 Unsolvable puzzle
+Two optimizations. To speed up your solver, implement the following two optimizations:
+
+  -The critical optimization. A* search has one annoying feature: search nodes corresponding to the same board are enqueued on the priority queue many times (e.g., the bottom-left search node in the game-tree diagram above). To reduce unnecessary exploration of useless search nodes, when considering the neighbors of a search node, don’t enqueue a neighbor if its board is the same as the board of the previous search node in the game tree.

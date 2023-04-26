@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class Board {
     private int [][] blocksArray;
     private int n;
-    private int manHa = -1;
+    private int manHa  = -1;
     private int hanMin = -1;
 
     public Board(int[][] blocks) {

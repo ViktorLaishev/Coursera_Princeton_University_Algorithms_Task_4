@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Solver {
-     private boolean isSolvable;
+    private boolean isSolvable;
     private int moveSteps;
     private Stack<Board> solution;
     private Node goal;

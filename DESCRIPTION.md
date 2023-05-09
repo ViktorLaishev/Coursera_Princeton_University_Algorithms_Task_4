@@ -69,7 +69,7 @@ public class Solver {
     public int moves()
 
     // sequence of boards in a shortest solution; null if unsolvable
-    public Iterable<Board> solution()
+    public Iterable<Board> solution() 
 
     // test client (see below) 
     public static void main(String[] args)

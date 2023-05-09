@@ -13,7 +13,7 @@ public class Board {
   
     // board dimension n 
     public int dimension()   
-
+ 
     // number of tiles out of place
     public int hamming()
 

@@ -77,7 +77,7 @@ public class Solver {
 }
 Implementation requirement.  To implement the A* algorithm, you must use the MinPQ data type for the priority queue.
 
-Corner cases. 
+Corner cases.  
 
   -Throw an IllegalArgumentException in the constructor if the argument is null.
   -Return -1 in moves() if the board is unsolvable.

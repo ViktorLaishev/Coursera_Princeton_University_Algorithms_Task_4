@@ -9,7 +9,7 @@ public class Board {
     public Board(int[][] tiles) 
                                            
     // string representation of this board
-    public String toString()
+    public String toString() 
 
     // board dimension n
     public int dimension() 

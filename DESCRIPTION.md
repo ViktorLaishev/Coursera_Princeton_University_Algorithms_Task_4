@@ -12,7 +12,7 @@ public class Board {
     public String toString()     
   
     // board dimension n 
-    public int dimension()  
+    public int dimension()   
 
     // number of tiles out of place
     public int hamming()

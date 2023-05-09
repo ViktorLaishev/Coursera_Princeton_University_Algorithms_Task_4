@@ -10,7 +10,7 @@ public class Board {
                                            
     // string representation of this board
     public String toString()  
- 
+  
     // board dimension n
     public int dimension()  
 

@@ -57,7 +57,7 @@ Game tree. One way to view the computation is as a game tree, where each search 
 
 For example, the following diagram illustrates the game tree after each of the first three steps of running the A* search algorithm on a 3-by-3 puzzle using the Manhattan priority function.
 Solver data type. In this part, you will implement A* search to solve n-by-n slider puzzles. Create an immutable data type Solver with the following API:
-public class Solver {
+public class Solver { 
 
     // find a solution to the initial board (using the A* algorithm)
     public Solver(Board initial)

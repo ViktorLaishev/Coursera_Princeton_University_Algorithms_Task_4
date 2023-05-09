@@ -47,7 +47,7 @@ Unit testing.  Your main() method should call each public method directly and he
 
 Performance requirements.  Your implementation should support all Board methods in time proportional to n^2 (or better) in the worst case.
 A* search. Now, we describe a solution to the 8-puzzle problem that illustrates a general artificial intelligence methodology known as the A* search algorithm. We define a search node of the game to be a board, the number of moves made to reach the board, and the previous search node. First, insert the initial search node (the initial board, 0 moves, and a null previous search node) into a priority queue. Then, delete from the priority queue the search node with the minimum priority, and insert onto the priority queue all neighboring search nodes (those that can be reached in one move from the dequeued search node). Repeat this procedure until the search node dequeued corresponds to the goal board.
-
+ 
 The efficacy of this approach hinges on the choice of priority function for a search node. We consider two priority functions:
   -The Hamming priority function is the Hamming distance of a board plus the number of moves made so far to get to the search node. Intuitively, a search node with a small number of tiles in the wrong position is close to the goal, and we prefer a search node if has been reached using a small number of moves.
   -The Manhattan priority function is the Manhattan distance of a board plus the number of moves made so far to get to the search node.

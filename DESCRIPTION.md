@@ -15,7 +15,7 @@ public class Board {
     public int dimension()   
  
     // number of tiles out of place
-    public int hamming()
+    public int hamming() 
 
     // sum of Manhattan distances between tiles and goal
     public int manhattan()

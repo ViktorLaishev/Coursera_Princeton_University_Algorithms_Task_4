@@ -8,7 +8,7 @@ public class Board {
     // where tiles[row][col] = tile at (row, col)
     public Board(int[][] tiles)     
                                            
-    // string representation of this board
+    // string representation of this board 
     public String toString()      
     
     // board dimension n  
